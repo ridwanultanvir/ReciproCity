@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.text.*?>
+<?import java.lang.*?>
+<?import java.net.*?>
+<?import java.util.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.paint.*?>
+
+<AnchorPane id="AnchorPane" fx:id="root" focusTraversable="false" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="800.0" prefWidth="800.0" styleClass="background" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.LoginController">
+  <children>
+<AnchorPane id="AnchorPane" layoutX="102.0" layoutY="259.0" prefHeight="216.0" prefWidth="540.0" styleClass="background">
+  <children>
+    <Label id="label1" layoutX="14.0" layoutY="94.0" text="Username">
+               <font>
+                  <Font size="25.0" />
+               </font>
+            </Label>
+    <TextField id="textField1" fx:id="userId" layoutX="159.0" layoutY="87.0" prefHeight="31.0" prefWidth="269.0" promptText="Username" AnchorPane.leftAnchor="159.0" AnchorPane.rightAnchor="0.0" />
+    <Label id="label1" layoutX="16.0" layoutY="157.0" text="Password">
+               <font>
+                  <Font size="25.0" />
+               </font>
+            </Label>
+    <PasswordField id="passwordField1" fx:id="password" layoutX="159.0" layoutY="150.0" prefHeight="31.0" prefWidth="269.0" promptText="Password" AnchorPane.leftAnchor="159.0" AnchorPane.rightAnchor="0.0" />
+  </children>
+</AnchorPane>
+      <Label fx:id="messageForLogin" layoutX="216.0" layoutY="497.0" prefHeight="53.0" prefWidth="335.0" text="Label" />
+      <Button fx:id="login" layoutX="77.0" layoutY="595.0" mnemonicParsing="false" onAction="#processLogin" prefHeight="31.0" prefWidth="109.0" text="Login">
+         <font>
+            <Font size="17.0" />
+         </font>
+      </Button>
+      <Button fx:id="btn_signup" layoutX="572.0" layoutY="589.0" mnemonicParsing="false" onAction="#processSignUp" text="Sign Up">
+         <font>
+            <Font size="17.0" />
+         </font>
+      </Button>
+      <ImageView fx:id="imageView" fitHeight="278.0" fitWidth="293.0" layoutX="249.0" layoutY="25.0" pickOnBounds="true" preserveRatio="true" />
+  </children>
+  <stylesheets>
+    <URL value="@Login.css" />
+  </stylesheets>
+</AnchorPane>

@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.text.*?>
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane fx:id="root" prefHeight="602.0" prefWidth="1285.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.DemandController">
+   <children>
+      <TableView fx:id="demandTable" layoutX="105.0" layoutY="71.0" onMouseClicked="#selectParticularTableItem" prefHeight="387.0" prefWidth="923.0">
+        <columns>
+          <TableColumn fx:id="fromCol" prefWidth="134.0" text="From" />
+          <TableColumn fx:id="fromMessageCol" prefWidth="448.0" text="Demand Name" />
+            <TableColumn fx:id="fromTimeCol" prefWidth="164.0" text="Time " />
+            <TableColumn fx:id="fromDateCol" prefWidth="181.0" text="Date" />
+        </columns>
+      </TableView>
+      <Button fx:id="back" layoutY="548.0" mnemonicParsing="false" onAction="#backAction" prefHeight="54.0" prefWidth="105.0" text="Back" />
+      <Button layoutX="1063.0" layoutY="149.0" mnemonicParsing="false" onAction="#setBtnSendMessageDemand" prefHeight="54.0" prefWidth="149.0" text="Send Message" />
+      <Label fx:id="labelSendMessage" layoutX="1063.0" layoutY="244.0" prefHeight="33.0" prefWidth="211.0">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Label>
+   </children>
+</AnchorPane>

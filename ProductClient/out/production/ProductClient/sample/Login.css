@@ -1,0 +1,52 @@
+
+.background {
+
+
+	-fx-background-color:
+         rgb(255, 255, 255);
+}
+
+
+
+.label {
+	-fx-font-family: "Times New Roman";
+    -fx-font-size: 24;
+
+
+}
+
+.profileTitle {
+    -fx-font-size: 15;
+}
+
+
+
+
+.button .text {
+    -fx-font-size: 20;
+}
+
+.button {
+
+    -fx-font-size: 20;
+
+}
+
+
+
+.text-field, .text-area {
+	-fx-font-size: 24;
+
+
+
+    -fx-font-family: "Arial";
+}
+
+.password-field{
+    -fx-font-size: 24;
+
+    -fx-font-family: "Arial";
+
+}
+
+

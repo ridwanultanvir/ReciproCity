@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.text.*?>
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+
+<AnchorPane prefHeight="275.0" prefWidth="531.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.ProductRemoveController">
+   <children>
+      <Label layoutX="123.0" layoutY="61.0" prefHeight="46.0" prefWidth="218.0" text="        Product Removed ">
+         <font>
+            <Font size="20.0" />
+         </font>
+      </Label>
+      <Button layoutY="230.0" mnemonicParsing="false" onAction="#backToMyProduct" prefHeight="46.0" prefWidth="91.0" text="Back" />
+      <Button layoutX="389.0" layoutY="230.0" mnemonicParsing="false" onAction="#gotoMyProfile" prefHeight="46.0" prefWidth="142.0" text="My Profile" />
+   </children>
+</AnchorPane>

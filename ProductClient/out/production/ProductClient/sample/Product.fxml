@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane fx:id="root" prefHeight="855.0" prefWidth="1572.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.ProductController">
+   <children>
+      <TableView fx:id="productTable" layoutX="265.0" layoutY="194.0" onMouseClicked="#displayParticularTableItem" prefHeight="528.0" prefWidth="956.0">
+        <columns>
+          <TableColumn fx:id="productCol" prefWidth="375.0" text="Product List" />
+            <TableColumn fx:id="uploaderCol" prefWidth="133.0" text="Uploader Id" />
+            <TableColumn fx:id="categoryCol" prefWidth="175.0" text="Category" />
+            <TableColumn fx:id="tagCol" prefWidth="133.0" text="Tag" />
+            <TableColumn fx:id="costCol" prefWidth="139.0" text="Cost" />
+        </columns>
+      </TableView>
+      <TextField fx:id="searchBox" layoutX="507.0" layoutY="33.0" onAction="#searchRecord" prefHeight="38.0" prefWidth="187.0" />
+      <VBox layoutY="81.0" prefHeight="616.0" prefWidth="138.0">
+         <children>
+            <Button mnemonicParsing="false" onAction="#myProductAction" prefHeight="121.0" prefWidth="138.0" text="My Product" />
+            <Button fx:id="btn_my_profile" mnemonicParsing="false" onAction="#profileAction" prefHeight="154.0" prefWidth="157.0" text="My Profile">
+               <font>
+                  <Font size="18.0" />
+               </font>
+            </Button>
+            <Button fx:id="btn_addProduct" mnemonicParsing="false" onAction="#addProduct" prefHeight="175.0" prefWidth="147.0" text="Add Product">
+               <font>
+                  <Font size="18.0" />
+               </font></Button>
+            <Button mnemonicParsing="false" onAction="#allDemand" prefHeight="171.0" prefWidth="139.0" text="All Demand ">
+               <font>
+                  <Font size="18.0" />
+               </font>
+            </Button>
+         </children>
+      </VBox>
+      <Label layoutX="1277.0" layoutY="14.0" prefHeight="21.0" prefWidth="151.0" text="Select Category">
+         <font>
+            <Font size="17.0" />
+         </font>
+      </Label>
+      <VBox layoutX="1277.0" layoutY="52.0" prefHeight="245.0" prefWidth="224.0">
+         <children>
+            <Button fx:id="ch_all" mnemonicParsing="false" onAction="#setCh_all" prefHeight="46.0" prefWidth="227.0" text="All" />
+            <Button fx:id="ch_book" mnemonicParsing="false" onAction="#setCh_book" prefHeight="46.0" prefWidth="227.0" text="Book" />
+            <Button fx:id="ch_lab" mnemonicParsing="false" onAction="#setCh_lab" prefHeight="55.0" prefWidth="230.0" text="Lab Instrument" />
+            <Button fx:id="ch_electrical" mnemonicParsing="false" onAction="#setCh_electrical" prefHeight="50.0" prefWidth="224.0" text="Electrical Component" />
+            <Button fx:id="ch_other" mnemonicParsing="false" onAction="#setCh_other" prefHeight="48.0" prefWidth="224.0" text="Others" />
+         </children>
+      </VBox>
+      <Label layoutX="271.0" layoutY="33.0" prefHeight="38.0" prefWidth="151.0" text="Search Product">
+         <font>
+            <Font size="18.0" />
+         </font></Label>
+      <Label layoutX="271.0" layoutY="96.0" prefHeight="38.0" prefWidth="151.0" text="Search Tag">
+         <font>
+            <Font size="18.0" />
+         </font></Label>
+      <TextField fx:id="searchTag" layoutX="507.0" layoutY="96.0" onAction="#searchTag" prefHeight="38.0" prefWidth="187.0" />
+      <Label layoutX="92.0" layoutY="762.0" prefHeight="38.0" prefWidth="508.0" text="Didn't Find Desired Product?          Click Demand Button">
+         <font>
+            <Font size="20.0" />
+         </font>
+      </Label>
+      <Button layoutX="695.0" layoutY="766.0" mnemonicParsing="false" onAction="#demandAction" prefHeight="46.0" prefWidth="129.0" text="Demand" />
+      <Button layoutX="1277.0" layoutY="359.0" mnemonicParsing="false" onAction="#gotoSpecificProduct" prefHeight="48.0" prefWidth="230.0" text="Goto Specific Product" />
+      <Label fx:id="gotoSpecificProductLabel" layoutX="1277.0" layoutY="458.0" prefHeight="38.0" prefWidth="230.0">
+         <font>
+            <Font size="17.0" />
+         </font>
+      </Label>
+   </children>
+</AnchorPane>

@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.text.*?>
+<?import java.lang.*?>
+<?import javafx.geometry.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextArea?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.HBox?>
+
+<AnchorPane id="AnchorPane" fx:id="root" prefHeight="941.0" prefWidth="1127.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.addProductController">
+   <children>
+      <Label layoutX="149.0" layoutY="174.0" prefHeight="50.0" prefWidth="71.0" text="Add Tag" AnchorPane.leftAnchor="149.0" AnchorPane.topAnchor="174.0" />
+      <Button fx:id="btn_back" layoutY="891.0" mnemonicParsing="false" onAction="#backToProduct" prefHeight="50.0" prefWidth="106.0" text="Back" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" />
+      <Label layoutX="148.0" layoutY="65.0" prefHeight="31.0" prefWidth="115.0" text="Product Name:" AnchorPane.topAnchor="65.0" />
+      <Button fx:id="btn_chooseImage" layoutX="14.0" layoutY="378.0" mnemonicParsing="false" onAction="#choosingImage" prefHeight="40.0" prefWidth="134.0" text="Choose image" AnchorPane.topAnchor="378.0" />
+      <Label layoutX="155.0" layoutY="122.0" prefHeight="40.0" prefWidth="80.0" text="Price :" />
+      <TextField fx:id="product_cost" layoutX="275.0" layoutY="122.0" prefHeight="40.0" prefWidth="80.0" />
+      <Label layoutX="375.0" layoutY="122.0" prefHeight="40.0" prefWidth="50.0" text="  Tk." />
+      <TextField fx:id="product_tag" layoutX="276.0" layoutY="174.0" prefHeight="50.0" prefWidth="236.0" />
+      <ImageView fx:id="productImage" fitHeight="315.0" fitWidth="247.0" layoutX="14.0" layoutY="470.0" pickOnBounds="true" preserveRatio="true" />
+      <ImageView fitHeight="306.0" fitWidth="236.0" layoutX="368.0" layoutY="460.0" pickOnBounds="true" preserveRatio="true" />
+      <Button fx:id="btn_submit" layoutX="389.0" layoutY="859.0" mnemonicParsing="false" onAction="#submitAction" prefHeight="50.0" prefWidth="198.0" text="Submit Data" />
+      <Label layoutX="137.0" layoutY="265.0" prefHeight="40.0" prefWidth="100.0" text="Add Category" />
+      <HBox layoutX="358.0" layoutY="518.0" prefHeight="255.0" prefWidth="669.0">
+         <children>
+            <ImageView fx:id="productImage1" fitHeight="261.0" fitWidth="236.0" pickOnBounds="true" preserveRatio="true">
+               <HBox.margin>
+                  <Insets right="10.0" />
+               </HBox.margin>
+            </ImageView>
+            <ImageView fx:id="productImage2" fitHeight="257.0" fitWidth="236.0" pickOnBounds="true" preserveRatio="true">
+               <HBox.margin>
+                  <Insets right="10.0" />
+               </HBox.margin>
+            </ImageView>
+            <ImageView fx:id="productImage3" fitHeight="257.0" fitWidth="236.0" pickOnBounds="true" preserveRatio="true">
+               <HBox.margin>
+                  <Insets right="10.0" />
+               </HBox.margin>
+            </ImageView>
+         </children>
+      </HBox>
+      <Button fx:id="btn_selectImage" layoutX="18.0" layoutY="795.0" mnemonicParsing="false" onAction="#selectImage" prefHeight="40.0" prefWidth="127.0" text="Submit Image" />
+      <ChoiceBox fx:id="categoryChoice" layoutX="275.0" layoutY="270.0" prefHeight="31.0" prefWidth="247.0" />
+      <Label fx:id="categoryLabel" layoutX="624.0" layoutY="274.0" prefHeight="40.0" prefWidth="254.0" />
+      <TextField fx:id="product_name" layoutX="275.0" layoutY="56.0" prefHeight="50.0" prefWidth="514.0" />
+   </children>
+</AnchorPane>

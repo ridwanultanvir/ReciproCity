@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.text.*?>
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane prefHeight="594.0" prefWidth="1021.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.SoldItemController">
+   <children>
+      <TableView fx:id="productTable" layoutX="59.0" layoutY="92.0" prefHeight="367.0" prefWidth="858.0">
+        <columns>
+          <TableColumn fx:id="productCol" prefWidth="335.0" text="Product Name" />
+          <TableColumn fx:id="buyerCol" prefWidth="197.0" text="Buyer" />
+            <TableColumn fx:id="dateCol" prefWidth="158.0" text="Sold Time" />
+            <TableColumn fx:id="timeCol" prefWidth="167.0" text="Sold Date" />
+        </columns>
+      </TableView>
+      <Button layoutY="545.0" mnemonicParsing="false" onAction="#goBack" prefHeight="49.0" prefWidth="130.0" text="Back" />
+      <Label layoutX="59.0" layoutY="35.0" prefHeight="39.0" prefWidth="195.0" text="Sold Items Notification">
+         <font>
+            <Font size="17.0" />
+         </font>
+      </Label>
+   </children>
+</AnchorPane>

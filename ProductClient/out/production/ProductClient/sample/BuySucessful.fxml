@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.text.*?>
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.BuySucessfulController">
+   <children>
+      <Label layoutX="160.0" layoutY="82.0" prefHeight="94.0" prefWidth="274.0" text="Product Sucessfully Bought">
+         <font>
+            <Font size="22.0" />
+         </font>
+      </Label>
+      <Label layoutX="206.0" layoutY="176.0" prefHeight="47.0" prefWidth="170.0" text="Find the Receipt">
+         <font>
+            <Font size="20.0" />
+         </font>
+      </Label>
+      <Button layoutY="350.0" mnemonicParsing="false" onAction="#gotoMyProfile" prefHeight="54.0" prefWidth="137.0" text="Back" />
+   </children>
+</AnchorPane>

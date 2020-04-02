@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane prefHeight="653.0" prefWidth="1092.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.MyProductController">
+   <children>
+      <TableView fx:id="productTable" layoutX="42.0" layoutY="115.0" onMouseClicked="#particularTableItemSelected" prefHeight="395.0" prefWidth="770.0">
+        <columns>
+          <TableColumn fx:id="productCol" prefWidth="331.0" text="Product Name" />
+          <TableColumn fx:id="costCol" minWidth="0.0" prefWidth="141.0" text="Cost" />
+            <TableColumn fx:id="timeCol" prefWidth="156.0" text="Date" />
+            <TableColumn fx:id="dateCol" prefWidth="146.0" text="Time" />
+        </columns>
+      </TableView>
+      <Button layoutY="602.0" mnemonicParsing="false" onAction="#goBackToProduct" prefHeight="51.0" prefWidth="97.0" text="Back" />
+      <Button layoutX="952.0" layoutY="27.0" mnemonicParsing="false" onAction="#goToNotificationSoldItem" prefHeight="40.0" prefWidth="118.0" text="Notification" />
+      <Button layoutX="774.0" layoutY="27.0" mnemonicParsing="false" onAction="#goToMyProfile" prefHeight="40.0" prefWidth="118.0" text="My Profile" />
+      <Button layoutX="871.0" layoutY="208.0" mnemonicParsing="false" onAction="#removeTableItem" prefHeight="40.0" prefWidth="179.0" text="Remove Product" />
+   </children>
+</AnchorPane>

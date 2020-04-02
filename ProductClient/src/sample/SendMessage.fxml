@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane fx:id="root" prefHeight="700.0" prefWidth="700.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.SendMessageController">
+   <children>
+      <Label layoutX="55.0" layoutY="34.0" prefHeight="39.0" prefWidth="228.0" text="Send Message From Here" />
+      <Button fx:id="back" layoutY="663.0" mnemonicParsing="false" onAction="#backAction" prefHeight="39.0" prefWidth="105.0" text="Back" />
+      <TextArea fx:id="textAreaMessage" layoutX="55.0" layoutY="278.0" prefHeight="160.0" prefWidth="550.0" />
+      <Button fx:id="sendMessage" layoutX="52.0" layoutY="477.0" mnemonicParsing="false" onAction="#sendMessageAction" text="Send Message" />
+      <Label layoutX="53.0" layoutY="117.0" prefHeight="39.0" prefWidth="57.0" text="To:" />
+      <TextField fx:id="textFieldSendingWhom" layoutX="133.0" layoutY="121.0" />
+      <Label layoutX="53.0" layoutY="183.0" prefHeight="39.0" prefWidth="57.0" text="Subject: " />
+      <TextField fx:id="txtSubject" layoutX="133.0" layoutY="191.0" prefHeight="39.0" prefWidth="476.0" />
+   </children>
+</AnchorPane>

@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.image.*?>
+<?import java.lang.*?>
+<?import javafx.scene.text.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="648.0" prefWidth="754.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.CreateAccountController">
+<children>
+   <AnchorPane prefHeight="368.0" prefWidth="646.0">
+      <children>
+         <VBox layoutX="53.0" layoutY="75.0" prefHeight="317.0" prefWidth="162.0">
+            <children>
+               <Label prefHeight="35.0" prefWidth="140.0" text="Fill In INFO">
+                  <font>
+                     <Font name="System Bold" size="18.0" />
+                  </font>
+               </Label>
+               <Label prefHeight="35.0" prefWidth="140.0" text="Student ID :">
+                     <font>
+                        <Font size="18.0" />
+                     </font></Label>
+               <Label prefHeight="29.0" prefWidth="140.0" text="User Name:">
+                     <font>
+                        <Font size="18.0" />
+                     </font></Label>
+               <Label prefHeight="35.0" prefWidth="140.0" text="Email :">
+                     <font>
+                        <Font size="18.0" />
+                     </font></Label>
+               <Label prefHeight="35.0" prefWidth="140.0" text="Hall Name :">
+                     <font>
+                        <Font size="18.0" />
+                     </font></Label>
+               <Label prefHeight="34.0" prefWidth="140.0" text="Room No: ">
+                     <font>
+                        <Font size="18.0" />
+                     </font></Label>
+               <Label prefHeight="30.0" prefWidth="140.0" text="Password :">
+                     <font>
+                        <Font size="18.0" />
+                     </font></Label>
+               <Label prefHeight="35.0" prefWidth="153.0" text="Confirm Password :">
+                     <font>
+                        <Font size="18.0" />
+                     </font></Label>
+            </children>
+         </VBox>
+         <VBox layoutX="215.0" layoutY="110.0" prefHeight="265.0" prefWidth="400.0">
+            <children>
+               <TextField fx:id="tf_id" prefHeight="35.0" prefWidth="300.0" promptText="student id" />
+               <TextField fx:id="tf_name" prefHeight="35.0" prefWidth="400.0" promptText="user name" />
+               <TextField fx:id="tf_email" prefHeight="35.0" prefWidth="400.0" promptText="email" />
+               <TextField fx:id="tf_hall" prefHeight="35.0" prefWidth="400.0" promptText="hall name" />
+               <TextField fx:id="tf_room" promptText="room no" />
+               <PasswordField fx:id="tf_pw" />
+               <PasswordField fx:id="tf_conpw" />
+            </children>
+         </VBox>
+      </children>
+   </AnchorPane>
+   <Button fx:id="btn_next" layoutX="500.0" layoutY="382.0" mnemonicParsing="false" onAction="#savingProfile" prefHeight="38.0" prefWidth="85.0" text="Submit" AnchorPane.bottomAnchor="204.0" AnchorPane.rightAnchor="61.0" />
+   <Label fx:id="errorMessage" layoutX="85.0" layoutY="456.0" prefHeight="38.0" prefWidth="352.0">
+      <font>
+         <Font size="20.0" />
+      </font></Label>
+   <ImageView fx:id="back_icon" fitHeight="121.0" fitWidth="134.0" layoutY="527.0" onMouseClicked="#setBack_icon" pickOnBounds="true" preserveRatio="true" />
+</children>
+</AnchorPane>
