@@ -14,9 +14,6 @@ public class Product {
 
 
 
-
-
-
     public void getMyProductData(PrintWriter pr,ObjectOutputStream oos,String userId){
 
 

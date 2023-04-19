@@ -4,7 +4,6 @@
  * and open the template in the editor.
  */
 package sample;
-
 import java.io.*;
 import java.net.URL;
 import java.util.ResourceBundle;

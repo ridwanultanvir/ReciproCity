@@ -1,6 +1,7 @@
 package sample;
 import java.io.Serializable;
 
+
 public class PInfo implements Serializable {
     String postNo;
     String productName;
